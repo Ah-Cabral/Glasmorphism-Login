@@ -134,7 +134,7 @@ body::after {
   transform: translateY(-150px);
 }
 .form .label-form {
-  color: #1d1d1d;
+  color: #f1f1f1;
   font-weight: 600;
 }
 .form .input-form {
@@ -149,6 +149,11 @@ body::after {
   background: #f1f1f1;
   color: #1d1d1d;
   font-weight: 600;
+  transition: all 0.2s;
+}
+.form .submit-button:hover {
+  color: #f1f1f1;
+  background: rgba(255, 237, 237, 0.24);
 }
 .form:hover h1 {
   transform: translateY(-200px);
