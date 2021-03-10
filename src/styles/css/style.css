@@ -1,4 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@keyframes apareceBall1 {
+  0% {
+    -webkit-clip-path: circle(25% at left 60%);
+            clip-path: circle(25% at left 60%);
+  }
+  100% {
+    -webkit-clip-path: circle(40% at left 80%);
+            clip-path: circle(40% at left 80%);
+  }
+}
+@keyframes apareceBall2 {
+  0% {
+    -webkit-clip-path: circle(25% at right 10%);
+            clip-path: circle(25% at right 10%);
+  }
+  100% {
+    -webkit-clip-path: circle(45% at right 5%);
+            clip-path: circle(45% at right 5%);
+  }
+}
+@keyframes apareceform {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -26,6 +54,7 @@ body::before {
   background: linear-gradient(to right, #dce4ff, #e2e2e2);
   -webkit-clip-path: circle(40% at left 80%);
           clip-path: circle(40% at left 80%);
+  animation: apareceBall1 1s;
 }
 
 body::after {
@@ -39,6 +68,7 @@ body::after {
   background: linear-gradient(to right, #dce4ff, #e2e2e2);
   -webkit-clip-path: circle(45% at right 5%);
           clip-path: circle(45% at right 5%);
+  animation: apareceBall2 1s;
 }
 
 .form {
@@ -56,6 +86,7 @@ body::after {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   z-index: 1;
+  animation: apareceform 2s;
 }
 .form h1 {
   color: #f1f1f1;
