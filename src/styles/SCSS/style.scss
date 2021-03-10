@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import "./animations.scss";
 
 $main-font: "Montserrat", sans-serif;
 $main-color: #06cddb;
@@ -32,6 +33,7 @@ body::before {
     background: -webkit-linear-gradient(to right, #dce4ff, #e2e2e2);
     background: linear-gradient(to right, #dce4ff, #e2e2e2);
     clip-path: circle(40% at left 80%);
+    animation: apareceBall1 1s;
 }
 
 body::after {
@@ -45,15 +47,20 @@ body::after {
     background: -webkit-linear-gradient(to right, #dce4ff, #e2e2e2);
     background: linear-gradient(to right, #dce4ff, #e2e2e2);
     clip-path: circle(45% at right 5%);
+    animation: apareceBall2 1s;
 }
 
 .form {
+    //Configurando display
     display: flex;
     align-items: center;
     justify-content: center;
+    //Definindo tamanho
     width: 800px;
     height: 450px;
+    //Alinhando texto ao centro
     text-align: center;
+    //Estilizando a box
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.082);
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.1);
@@ -61,6 +68,8 @@ body::after {
     border-left: 1px solid rbga(255, 255, 255, 0.5);
     backdrop-filter: blur(5px);
     z-index: 1;
+    //Adicionando animação
+    animation: apareceform 2s;
     h1 {
         color: $main-white;
     }
