@@ -71,21 +71,27 @@ body::after {
             font-family: $main-font;
             position: absolute;
             content: "Linkedin";
-            top: 116.8px;
-            left: 596.8px;
+            padding: 0.3rem 0.5rem;
+            background: $main-white;
+            color: $main-color;
+            top: 105px;
+            left: 588px;
             text-align: center;
             animation: aparece 1s;
         }
     }
     .fa-github:hover {
-        transform: all 2s;
+        transform: all 1s;
         &::after {
             font-size: 1rem;
             font-family: $main-font;
             position: absolute;
             content: "Github";
-            top: 116.8px;
-            left: 944px;
+            padding: 0.3rem 0.5rem;
+            background: $main-white;
+            color: $main-color;
+            top: 105px;
+            left: 933px;
             text-align: center;
             animation: aparece 1s;
         }
@@ -98,8 +104,8 @@ body::after {
     align-items: center;
     justify-content: center;
     //Definindo tamanho
-    width: 800px;
-    height: 450px;
+    width: 40%;
+    height: 60vh;
     //Alinhando texto ao centro
     text-align: center;
     //Estilizando a box
