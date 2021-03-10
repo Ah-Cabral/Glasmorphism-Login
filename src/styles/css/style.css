@@ -19,7 +19,7 @@
             clip-path: circle(45% at right 5%);
   }
 }
-@keyframes apareceform {
+@keyframes aparece {
   0% {
     opacity: 0;
   }
@@ -40,6 +40,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   min-height: 100vh;
   background: #00d2ff;
   background: linear-gradient(to right, #06cddb, #00d2ff);
@@ -73,6 +74,44 @@ body::after {
   animation: apareceBall2 1s;
 }
 
+.icons {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  animation: aparece 2s;
+}
+.icons * {
+  color: #f1f1f1;
+}
+.icons .fa-linkedin:hover {
+  transform: all 2s;
+}
+.icons .fa-linkedin:hover::after {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  content: "Linkedin";
+  top: 116.8px;
+  left: 596.8px;
+  text-align: center;
+  animation: aparece 1s;
+}
+.icons .fa-github:hover {
+  transform: all 2s;
+}
+.icons .fa-github:hover::after {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  content: "Github";
+  top: 116.8px;
+  left: 944px;
+  text-align: center;
+  animation: aparece 1s;
+}
+
 .form {
   display: flex;
   align-items: center;
@@ -88,10 +127,11 @@ body::after {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   z-index: 1;
-  animation: apareceform 2s;
+  animation: aparece 2s;
 }
 .form h1 {
   color: #f1f1f1;
+  transform: translateY(-150px);
 }
 .form .label-form {
   color: #1d1d1d;
@@ -111,7 +151,7 @@ body::after {
   font-weight: 600;
 }
 .form:hover h1 {
-  transform: translateY(-100px);
+  transform: translateY(-200px);
   opacity: 0;
   transition: 0.2s;
 }
