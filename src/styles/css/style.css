@@ -24,8 +24,8 @@ body::before {
   height: 100%;
   background: #c9d6ff;
   background: linear-gradient(to right, #dce4ff, #e2e2e2);
-  -webkit-clip-path: circle(20% at left 80%);
-          clip-path: circle(20% at left 80%);
+  -webkit-clip-path: circle(40% at left 80%);
+          clip-path: circle(40% at left 80%);
 }
 
 body::after {
@@ -37,15 +37,44 @@ body::after {
   height: 100%;
   background: #c9d6ff;
   background: linear-gradient(to right, #dce4ff, #e2e2e2);
-  -webkit-clip-path: circle(20% at right 30%);
-          clip-path: circle(20% at right 30%);
+  -webkit-clip-path: circle(45% at right 5%);
+          clip-path: circle(45% at right 5%);
 }
 
 .form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 800px;
+  height: 450px;
   text-align: center;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.082);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rbga(255, 255, 255, 0.5);
+  border-left: 1px solid rbga(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  z-index: 1;
+}
+.form h1 {
+  color: #f1f1f1;
+}
+.form:hover h1 {
+  transform: translateY(-100px);
+  opacity: 0;
+  transition: 0.2s;
+}
+.form:hover .content {
+  transform: translateY(0);
+  opacity: 1;
 }
 .form .content {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  transition: 0.5s;
+  transform: translateY(100px);
+  opacity: 0;
+  position: absolute;
 }
