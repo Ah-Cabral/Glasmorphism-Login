@@ -1,0 +1,26 @@
+@keyframes apareceBall1 {
+    0% {
+        clip-path: circle(25% at left 60%);
+    }
+    100% {
+        clip-path: circle(40% at left 80%);
+    }
+}
+
+@keyframes apareceBall2 {
+    0% {
+        clip-path: circle(25% at right 10%);
+    }
+    100% {
+        clip-path: circle(45% at right 5%);
+    }
+}
+
+@keyframes apareceform {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
