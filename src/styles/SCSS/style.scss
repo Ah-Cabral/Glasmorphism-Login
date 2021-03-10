@@ -4,12 +4,15 @@
 $main-font: "Montserrat", sans-serif;
 $main-color: #06cddb;
 $main-white: #f1f1f1;
+$main-dark: rgb(29, 29, 29);
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: $main-font;
+    border: none;
+    outline: none;
 }
 
 body {
@@ -70,9 +73,31 @@ body::after {
     z-index: 1;
     //Adicionando animação
     animation: apareceform 2s;
+
     h1 {
         color: $main-white;
     }
+
+    .label-form {
+        color: $main-dark;
+        font-weight: 600;
+    }
+
+    .input-form {
+        background: rgba(255, 237, 237, 0.24);
+        &:active {
+            background: rgba(255, 237, 237, 0.24);
+        }
+    }
+
+    .submit-button {
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        background: $main-white;
+        color: $main-dark;
+        font-weight: 600;
+    }
+
     &:hover {
         h1 {
             transform: translateY(-100px);
