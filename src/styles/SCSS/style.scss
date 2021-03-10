@@ -119,7 +119,7 @@ body::after {
     }
 
     .label-form {
-        color: $main-dark;
+        color: $main-white;
         font-weight: 600;
     }
 
@@ -136,6 +136,11 @@ body::after {
         background: $main-white;
         color: $main-dark;
         font-weight: 600;
+        transition: all 0.2s;
+        &:hover {
+            color: $main-white;
+            background: rgba(255, 237, 237, 0.24);
+        }
     }
 
     &:hover {
