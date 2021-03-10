@@ -32,6 +32,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  border: none;
+  outline: none;
 }
 
 body {
@@ -90,6 +92,23 @@ body::after {
 }
 .form h1 {
   color: #f1f1f1;
+}
+.form .label-form {
+  color: #1d1d1d;
+  font-weight: 600;
+}
+.form .input-form {
+  background: rgba(255, 237, 237, 0.24);
+}
+.form .input-form:active {
+  background: rgba(255, 237, 237, 0.24);
+}
+.form .submit-button {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background: #f1f1f1;
+  color: #1d1d1d;
+  font-weight: 600;
 }
 .form:hover h1 {
   transform: translateY(-100px);
